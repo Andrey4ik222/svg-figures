@@ -1,2 +1,57 @@
 @use 'libs/normalize';
 
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+}
+.animation{
+  fill: green;
+  stroke: purple;
+  stroke-width: 5;
+  animation-name: color;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+@keyframes color {
+  10%{
+    fill: purple;
+    stroke: green;
+  }
+  20%{
+    fill: green;
+  stroke: purple;
+  }
+  30%{
+    fill: purple;
+    stroke: green;
+  }
+  40%{
+    fill: green;
+    stroke: purple;
+  }
+  50%{
+    fill: purple;
+    stroke: green;
+  }
+  60%{
+    fill: green;
+    stroke: purple;
+  }
+  70%{
+    fill: purple;
+    stroke: green;
+  }
+  80%{
+    fill: green;
+  stroke: purple;
+  }
+90%{
+  fill: purple;
+  stroke: green;
+}
+100%{
+  fill: green;
+  stroke: purple;
+}
+}
